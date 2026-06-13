@@ -8,7 +8,7 @@ export default function Navbar() {
   const { toggleSidebar } = usePOS();
   const [now, setNow] = useState(new Date());
   const [search, setSearch] = useState('');
-
+  console.log("small changes");
   // Update clock every minute
   useEffect(() => {
     const timer = setInterval(() => setNow(new Date()), 60000);
